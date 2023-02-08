@@ -28,13 +28,23 @@ const Home = () => {
     setConverted(true);
   };
   return (
-    <div>
-      <TextInputField text={text} setText={setText} />
-      <button disabled={!text} onClick={onClickConvert}>
-        Convert!
-      </button>
-      {converted &&
-        features.map((feature) => <TextProcessedField text={feature.text} />)}
+    <div className="home">
+      <h2 className="title">YT Tools</h2>
+      <div className="components">
+        <TextInputField
+          text={text}
+          setText={setText}
+          onClickConvert={onClickConvert}
+        />
+
+        {converted && (
+          <div className="features">
+            {features.map((feature) => (
+              <TextProcessedField text={feature.text} />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

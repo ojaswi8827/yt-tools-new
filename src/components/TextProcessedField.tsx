@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface ITextInputFieldProps {
   text: string;
 }
@@ -5,11 +7,16 @@ interface ITextInputFieldProps {
 const TextProcessedField = ({ text }: ITextInputFieldProps) => {
   const onClickCopy = () => {
     navigator.clipboard.writeText(text);
+    setButtonText("Copied!");
   };
+  const [buttonText, setButtonText] = useState("Copy!");
   return (
-    <div>
-      <textarea value={text} disabled={true} />
-      <button onClick={onClickCopy}>Copy</button>
+    <div className="text-processed">
+      <textarea className="text-processed-text" value={text} disabled={true} />
+      <br />
+      <button className="btn-copy" onClick={onClickCopy}>
+        {buttonText}
+      </button>
     </div>
   );
 };
