@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ojaswi8827/yt-tools/static/css/main.0da18a5e.css",
-    "main.js": "/ojaswi8827/yt-tools/static/js/main.348576cf.js",
-    "static/js/787.be680840.chunk.js": "/ojaswi8827/yt-tools/static/js/787.be680840.chunk.js",
-    "index.html": "/ojaswi8827/yt-tools/index.html",
-    "main.0da18a5e.css.map": "/ojaswi8827/yt-tools/static/css/main.0da18a5e.css.map",
-    "main.348576cf.js.map": "/ojaswi8827/yt-tools/static/js/main.348576cf.js.map",
-    "787.be680840.chunk.js.map": "/ojaswi8827/yt-tools/static/js/787.be680840.chunk.js.map"
+    "main.css": "/ojaswi8827/yt-tools-new/static/css/main.0da18a5e.css",
+    "main.js": "/ojaswi8827/yt-tools-new/static/js/main.7133e600.js",
+    "static/js/787.e58ce0d3.chunk.js": "/ojaswi8827/yt-tools-new/static/js/787.e58ce0d3.chunk.js",
+    "index.html": "/ojaswi8827/yt-tools-new/index.html",
+    "main.0da18a5e.css.map": "/ojaswi8827/yt-tools-new/static/css/main.0da18a5e.css.map",
+    "main.7133e600.js.map": "/ojaswi8827/yt-tools-new/static/js/main.7133e600.js.map",
+    "787.e58ce0d3.chunk.js.map": "/ojaswi8827/yt-tools-new/static/js/787.e58ce0d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0da18a5e.css",
-    "static/js/main.348576cf.js"
+    "static/js/main.7133e600.js"
   ]
 }
