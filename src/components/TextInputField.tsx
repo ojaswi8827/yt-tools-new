@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface ITextInputFieldProps {
   text: string;
   setText: React.Dispatch<React.SetStateAction<string>>;
@@ -9,6 +11,11 @@ const TextInputField = ({
   setText,
   onClickConvert,
 }: ITextInputFieldProps) => {
+  const onClickCopy = () => {
+    navigator.clipboard.writeText(text);
+    setButtonText("Copied!");
+  };
+  const [buttonText, setButtonText] = useState("Copy!");
   return (
     <div className="text-input">
       <textarea
@@ -20,6 +27,13 @@ const TextInputField = ({
       <br />
       <button className="btn-convert" disabled={!text} onClick={onClickConvert}>
         Convert!
+      </button>
+      <button
+        className="btn-copy btn-copy-input"
+        disabled={!text}
+        onClick={onClickCopy}
+      >
+        {buttonText}
       </button>
     </div>
   );

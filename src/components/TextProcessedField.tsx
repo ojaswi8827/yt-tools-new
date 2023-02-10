@@ -14,9 +14,16 @@ const TextProcessedField = ({ text }: ITextInputFieldProps) => {
     <div className="text-processed">
       <textarea className="text-processed-text" value={text} disabled={true} />
       <br />
-      <button className="btn-copy" onClick={onClickCopy}>
-        {buttonText}
-      </button>
+      <div className="btn-copy-length-wrapper">
+        <div className="btn-copy-wrapper">
+          <button className="btn-copy" onClick={onClickCopy}>
+            {buttonText}
+          </button>
+        </div>
+        <div className="char-length-wrapper">
+          <p className="char-length">Length: {text.length}</p>
+        </div>
+      </div>
     </div>
   );
 };

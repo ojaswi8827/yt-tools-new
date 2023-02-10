@@ -19,6 +19,10 @@
   margin-bottom: 1rem;
 }
 
+.btn-copy-input {
+  margin-left: 8px;
+}
+
 .features {
   display: grid;
   height: 68vh;
@@ -27,4 +31,20 @@
 .text-processed {
   height: 26vh;
   width: 40vw;
+}
+
+.btn-copy-length-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.char-length-wrapper {
+  padding: 0;
+}
+
+.char-length {
+  margin: 0;
+  color: red;
+  font-size: 12px;
 }
