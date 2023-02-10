@@ -1,7 +1,7 @@
 {
-  "name": "yt-tools",
+  "name": "yt-tools-new",
   "version": "0.1.0",
-  "homepage": "https://github.com/ojaswi8827/yt-tools",
+  "homepage": "https://github.com/ojaswi8827/yt-tools-new",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
